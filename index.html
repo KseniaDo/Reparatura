@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Reparatura</title>
 </head>
 <body>
     <!-- <img src="./images/check7.png" alt="" class="pixel-perfect-image"> -->
-     <div class="scrollUp"><a class="scrollUp" href="#header"></a></div>
+    <div class="scrollUp"><a class="scrollUp" href="#header"></a></div>
     <header class="header" id="header">
     <div class="logo header__logo"></div>
     <nav class="navigation header__navigation">
@@ -50,7 +52,7 @@
         <h1 class="heading text_white common-information__heading">ремонт без переделок</h1>
         <h2 class="subtitle">Шпаклевка стен под обои и покраску механизированным и ручным способом. Безвоздушная покраска и покраска валиком.<br/>Мы ваше лучшее решение в малярных работах.</h2>
         <a class="button common-information__button link_nodecoration" href="#form">связаться с нами</a>
-        <a class="button button_transparent common-information__button link_nodecoration" href="#sevices">узнать об услугах</a>
+        <a class="button button_transparent common-information__button link_nodecoration" href="#services">узнать об услугах</a>
     </div>
     <div class="common-advantages">
         <div class="item">
@@ -104,14 +106,114 @@
             <h3 class="text item__text item__text_small">Проверяем качество и ровность основания, выявляем возможные проблемы, поскольку это залог успешного завершения малярных работ</h3>
         </div>
         <div class="item services__item_crop">
-            <img class="item__image" src="./images/services_1.jpg" alt="Светлые стены"/>
+            <picture>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_1_h164_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_1_h164_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_1_h164_@3x.jpg 3x"
+                    media="(max-width: 340px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_1_h232_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_1_h232_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_1_h232_@3x.jpg 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_1_h340_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_1_h340_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_1_h340_@3x.jpg 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_1_h164_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_1_h164_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_1_h164_@3x.jpg 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_1_h200_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_1_h200_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_1_h200_@3x.jpg 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_1_h232_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_1_h232_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_1_h232_@3x.jpg 3x"
+                    media="(max-width: 1400px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_1_h320_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_1_h320_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_1_h320_@3x.jpg 3x"
+                    media="(max-width: 1720px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_1_h340_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_1_h340_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_1_h340_@3x.jpg 3x"
+                    media="(max-width: 1920px)"/>
+                <img class="item__image" src="./images/services/jpg_f/services_1_h340_@1x.jpg" alt="Светлые стены">
+            </picture>
         </div>
         <div class="item item_shadow services__item">
             <h2 class="item__heading item__heading_small">малярные работы</h2>
             <h3 class="text item__text item__text_small">Выполняем все виды малярных работ: выравниваем поверхность, красим, клеим стеклохолст, грунтуем стены и потолок</h3>
         </div>
         <div class="item services__item_crop">
-            <img class="item__image" src="./images/services_2.jpg" alt="Светлые потолки"/>
+            <picture>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_2_h164_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_2_h164_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_2_h164_@3x.jpg 3x"
+                    media="(max-width: 340px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_2_h232_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_2_h232_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_2_h232_@3x.jpg 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_2_h340_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_2_h340_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_2_h340_@3x.jpg 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_2_h164_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_2_h164_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_2_h164_@3x.jpg 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_2_h200_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_2_h200_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_2_h200_@3x.jpg 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_2_h232_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_2_h232_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_2_h232_@3x.jpg 3x"
+                    media="(max-width: 1400px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_2_h320_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_2_h320_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_2_h320_@3x.jpg 3x"
+                    media="(max-width: 1720px)"/>
+                <source
+                    srcset="
+                        ./images/services/jpg_f/services_2_h340_@1x.jpg 1x,
+                        ./images/services/jpg_f/services_2_h340_@2x.jpg 2x,
+                        ./images/services/jpg_f/services_2_h340_@3x.jpg 3x"
+                    media="(max-width: 1920px)"/>
+                <img class="item__image" src="./images/services/jpg_f/services_2_h340_@1x.jpg" alt="Светлые потолки">
+            </picture>
         </div>
         <div class="item item_shadow services__item">
             <h2 class="item__heading item__heading_small">постремонтная помощь</h2>
@@ -158,25 +260,237 @@
     <h2 class="heading heading_small portfolio__heading">портфолио</h2>
     <div class="portfolio__content">
         <div class="portfolio__item portfolio__item_normal">
-            <img class="item__image" src="./images/portfolio_1.jpg" alt="Фотография из портфолио светлых стен"/>
+            <picture>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_1_h300_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_1_h300_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_1_h300_@3x.jpg 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_1_h600_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_1_h600_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_1_h600_@3x.jpg 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_1_h350_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_1_h350_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_1_h350_@3x.jpg 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_1_h592_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_1_h592_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_1_h592_@3x.jpg 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_1_h672_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_1_h672_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_1_h672_@3x.jpg 3x"
+                    media="(max-width: 1920px)"/>
+                <img class="item__image" src="./images/portfolio/jpg_f/portfolio_1_h672_@1x.jpg" alt="Фотография из портфолио светлых стен">
+            </picture>
         </div>
         <div class="portfolio__item portfolio__item_small">
-            <img class="item__image" src="./images/portfolio_2.jpg" alt="Фотография из портфолио светлых стен"/>
+            <picture>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_2_h384_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_2_h384_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_2_h384_@3x.jpg 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_2_h600_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_2_h600_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_2_h600_@3x.jpg 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_2_h200_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_2_h200_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_2_h200_@3x.jpg 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_2_h384_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_2_h384_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_2_h384_@3x.jpg 3x"
+                    media="(max-width: 1920px)"/>
+                <img class="item__image" src="./images/portfolio/jpg_f/portfolio_2_h384_@1x.jpg" alt="Фотография из портфолио светлых стен">
+            </picture>
         </div>
         <div class="portfolio__item portfolio__item_normal">
-            <img class="item__image" src="./images/portfolio_3.jpg" alt="Фотография из портфолио белых стен"/>
+            <picture>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_3_h300_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_3_h300_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_3_h300_@3x.jpg 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_3_h600_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_3_h600_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_3_h600_@3x.jpg 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_3_h350_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_3_h350_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_3_h350_@3x.jpg 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_3_h592_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_3_h592_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_3_h592_@3x.jpg 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_3_h672_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_3_h672_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_3_h672_@3x.jpg 3x"
+                    media="(max-width: 1920px)"/>
+                <img class="item__image" src="./images/portfolio/jpg_f/portfolio_3_h672_@1x.jpg" alt="Фотография из портфолио белых стен">
+            </picture>
         </div>
         <div class="portfolio__item portfolio__item_normal">
-            <img class="item__image" src="./images/portfolio_4.jpg" alt="Фотография из портфолио светлых стен"/>
+            <picture>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_4_h300_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_4_h300_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_4_h300_@3x.jpg 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_4_h600_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_4_h600_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_4_h600_@3x.jpg 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_4_h350_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_4_h350_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_4_h350_@3x.jpg 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_4_h592_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_4_h592_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_4_h592_@3x.jpg 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_4_h672_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_4_h672_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_4_h672_@3x.jpg 3x"
+                    media="(max-width: 1920px)"/>
+                <img class="item__image" src="./images/portfolio/jpg_f/portfolio_4_h672_@1x.jpg" alt="Фотография из портфолио светлых стен">
+            </picture>
         </div>
         <div class="portfolio__item portfolio__item_small">
-            <img class="item__image" src="./images/portfolio_5.jpg" alt="Фотография из портфолио синих стен"/>
+            <picture>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_5_h384_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_5_h384_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_5_h384_@3x.jpg 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_5_h600_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_5_h600_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_5_h600_@3x.jpg 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_5_h200_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_5_h200_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_5_h200_@3x.jpg 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_5_h384_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_5_h384_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_5_h384_@3x.jpg 3x"
+                    media="(max-width: 1920px)"/>
+                <img class="item__image" src="./images/portfolio/jpg_f/portfolio_5_h384_@1x.jpg" alt="Фотография из портфолио синих стен">
+            </picture>
         </div>
         <div class="portfolio__item portfolio__item_normal">
-            <img class="item__image" src="./images/portfolio_6.jpg" alt="Фотография из портфолио белых стен"/>
+            <picture>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_6_h300_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_6_h300_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_6_h300_@3x.jpg 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_6_h600_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_6_h600_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_6_h600_@3x.jpg 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_6_h350_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_6_h350_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_6_h350_@3x.jpg 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_6_h592_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_6_h592_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_6_h592_@3x.jpg 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_6_h672_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_6_h672_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_6_h672_@3x.jpg 3x"
+                    media="(max-width: 1920px)"/>
+                <img class="item__image" src="./images/portfolio/jpg_f/portfolio_6_h672_@1x.jpg" alt="Фотография из портфолио белых стен">
+            </picture>
         </div>
         <div class="portfolio__item portfolio__item_normal">
-            <img class="item__image" src="./images/portfolio_7.jpg" alt="Фотография из портфолио синих фактурных стен"/>
+            <picture>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_7_h300_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_7_h300_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_7_h300_@3x.jpg 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_7_h600_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_7_h600_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_7_h600_@3x.jpg 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_7_h350_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_7_h350_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_7_h350_@3x.jpg 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_7_h592_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_7_h592_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_7_h592_@3x.jpg 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    srcset="
+                        ./images/portfolio/jpg_f/portfolio_7_h672_@1x.jpg 1x,
+                        ./images/portfolio/jpg_f/portfolio_7_h672_@2x.jpg 2x,
+                        ./images/portfolio/jpg_f/portfolio_7_h672_@3x.jpg 3x"
+                    media="(max-width: 1920px)"/>
+                <img class="item__image" src="./images/portfolio/jpg_f/portfolio_7_h672_@1x.jpg" alt="Фотография из портфолио синих фактурных стен">
+            </picture>
         </div>
     </div>
 </section>
