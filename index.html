@@ -6,21 +6,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Reparatura</title>
 </head>
 <body>
     <!-- <img src="./images/check7.png" alt="" class="pixel-perfect-image"> -->
-    <div class="scrollUp"><a class="scrollUp" href="#header"></a></div>
+    <div class="scrollUp"><a class="scrollUp" href="#top"></a></div>
     <header class="header" id="header">
     <div class="logo header__logo"></div>
     <nav class="navigation header__navigation">
         <ul class="navigation__content">
-            <li class="navigation__item"><a class="link_nodecoration" href="#common">почему мы</a></li>
-            <li class="navigation__item"><a class="link_nodecoration" href="#services">услуги</a></li>
-            <li class="navigation__item"><a class="link_nodecoration" href="#cost">стоимость</a></li>
-            <li class="navigation__item"><a class="link_nodecoration" href="#portfolio">портфолио</a></li>
-            <li class="navigation__item"><a class="link_nodecoration" href="#stages">этапы</a></li>
+            <li class="navigation__item"><a class="link_nodecoration links-scroll_js" href="#common">почему мы</a></li>
+            <li class="navigation__item"><a class="link_nodecoration links-scroll_js" href="#services">услуги</a></li>
+            <li class="navigation__item"><a class="link_nodecoration links-scroll_js" href="#cost">стоимость</a></li>
+            <li class="navigation__item"><a class="link_nodecoration links-scroll_js" href="#portfolio">портфолио</a></li>
+            <li class="navigation__item"><a class="link_nodecoration links-scroll_js" href="#stages">этапы</a></li>
         </ul>
     </nav>
     <div class="header__interactive">
@@ -32,12 +32,12 @@
                 <div class="logo modal-window__logo"></div>
                 <nav class="navigation modal-window__navigation">
                     <ul class="navigation__content_column">
-                        <li class="navigation__item navigation__item_block"><a class="link_nodecoration" href="#common">почему мы?</a></li>
-                        <li class="navigation__item navigation__item_block"><a class="link_nodecoration" href="#services">услуги</a></li>
-                        <li class="navigation__item navigation__item_block"><a class="link_nodecoration" href="#cost">расчет стоимости</a></li>
-                        <li class="navigation__item navigation__item_block"><a class="link_nodecoration" href="#portfolio">портфолио</a></li>
-                        <li class="navigation__item navigation__item_block"><a class="link_nodecoration" href="#stages">этапы работ</a></li>
-                        <li class="navigation__item navigation__item_block"><a class="link_nodecoration" href="#faq">частые вопросы</a></li>
+                        <li class="navigation__item navigation__item_block"><a class="link_nodecoration links-modal-scroll_js" href="#common">почему мы?</a></li>
+                        <li class="navigation__item navigation__item_block"><a class="link_nodecoration links-modal-scroll_js" href="#services">услуги</a></li>
+                        <li class="navigation__item navigation__item_block"><a class="link_nodecoration links-modal-scroll_js" href="#cost">расчет стоимости</a></li>
+                        <li class="navigation__item navigation__item_block"><a class="link_nodecoration links-modal-scroll_js" href="#portfolio">портфолио</a></li>
+                        <li class="navigation__item navigation__item_block"><a class="link_nodecoration links-modal-scroll_js" href="#stages">этапы работ</a></li>
+                        <li class="navigation__item navigation__item_block"><a class="link_nodecoration links-modal-scroll_js" href="#faq">частые вопросы</a></li>
                     </ul>
                 </nav>
                 <a class="button button_black modal-window__button link_nodecoration" href="#form">связаться с нами</a>
@@ -108,48 +108,112 @@
         <div class="item services__item_crop">
             <picture>
                 <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_1_h164_@1x.webp 1x,
+                        ./images/services/webp_f/services_1_h164_@2x.webp 2x,
+                        ./images/services/webp_f/services_1_h164_@3x.webp 3x"
+                    media="(max-width: 340px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_1_h232_@1x.webp 1x,
+                        ./images/services/webp_f/services_1_h232_@2x.webp 2x,
+                        ./images/services/webp_f/services_1_h232_@3x.webp 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_1_h340_@1x.webp 1x,
+                        ./images/services/webp_f/services_1_h340_@2x.webp 2x,
+                        ./images/services/webp_f/services_1_h340_@3x.webp 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_1_h164_@1x.webp 1x,
+                        ./images/services/webp_f/services_1_h164_@2x.webp 2x,
+                        ./images/services/webp_f/services_1_h164_@3x.webp 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_1_h200_@1x.webp 1x,
+                        ./images/services/webp_f/services_1_h200_@2x.webp 2x,
+                        ./images/services/webp_f/services_1_h200_@3x.webp 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_1_h232_@1x.webp 1x,
+                        ./images/services/webp_f/services_1_h232_@2x.webp 2x,
+                        ./images/services/webp_f/services_1_h232_@3x.webp 3x"
+                    media="(max-width: 1400px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_1_h320_@1x.webp 1x,
+                        ./images/services/webp_f/services_1_h320_@2x.webp 2x,
+                        ./images/services/webp_f/services_1_h320_@3x.webp 3x"
+                    media="(max-width: 1720px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_1_h340_@1x.webp 1x,
+                        ./images/services/webp_f/services_1_h340_@2x.webp 2x,
+                        ./images/services/webp_f/services_1_h340_@3x.webp 3x"
+                    media="(max-width: 1920px)"/>
+                <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_1_h164_@1x.jpg 1x,
                         ./images/services/jpg_f/services_1_h164_@2x.jpg 2x,
                         ./images/services/jpg_f/services_1_h164_@3x.jpg 3x"
                     media="(max-width: 340px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_1_h232_@1x.jpg 1x,
                         ./images/services/jpg_f/services_1_h232_@2x.jpg 2x,
                         ./images/services/jpg_f/services_1_h232_@3x.jpg 3x"
                     media="(max-width: 420px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_1_h340_@1x.jpg 1x,
                         ./images/services/jpg_f/services_1_h340_@2x.jpg 2x,
                         ./images/services/jpg_f/services_1_h340_@3x.jpg 3x"
                     media="(max-width: 767px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_1_h164_@1x.jpg 1x,
                         ./images/services/jpg_f/services_1_h164_@2x.jpg 2x,
                         ./images/services/jpg_f/services_1_h164_@3x.jpg 3x"
                     media="(max-width: 990px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_1_h200_@1x.jpg 1x,
                         ./images/services/jpg_f/services_1_h200_@2x.jpg 2x,
                         ./images/services/jpg_f/services_1_h200_@3x.jpg 3x"
                     media="(max-width: 1200px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_1_h232_@1x.jpg 1x,
                         ./images/services/jpg_f/services_1_h232_@2x.jpg 2x,
                         ./images/services/jpg_f/services_1_h232_@3x.jpg 3x"
                     media="(max-width: 1400px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_1_h320_@1x.jpg 1x,
                         ./images/services/jpg_f/services_1_h320_@2x.jpg 2x,
                         ./images/services/jpg_f/services_1_h320_@3x.jpg 3x"
                     media="(max-width: 1720px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_1_h340_@1x.jpg 1x,
                         ./images/services/jpg_f/services_1_h340_@2x.jpg 2x,
@@ -165,48 +229,112 @@
         <div class="item services__item_crop">
             <picture>
                 <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_2_h164_@1x.webp 1x,
+                        ./images/services/webp_f/services_2_h164_@2x.webp 2x,
+                        ./images/services/webp_f/services_2_h164_@3x.webp 3x"
+                    media="(max-width: 340px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_2_h232_@1x.webp 1x,
+                        ./images/services/webp_f/services_2_h232_@2x.webp 2x,
+                        ./images/services/webp_f/services_2_h232_@3x.webp 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_2_h340_@1x.webp 1x,
+                        ./images/services/webp_f/services_2_h340_@2x.webp 2x,
+                        ./images/services/webp_f/services_2_h340_@3x.webp 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_2_h164_@1x.webp 1x,
+                        ./images/services/webp_f/services_2_h164_@2x.webp 2x,
+                        ./images/services/webp_f/services_2_h164_@3x.webp 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_2_h200_@1x.webp 1x,
+                        ./images/services/webp_f/services_2_h200_@2x.webp 2x,
+                        ./images/services/webp_f/services_2_h200_@3x.webp 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_2_h232_@1x.webp 1x,
+                        ./images/services/webp_f/services_2_h232_@2x.webp 2x,
+                        ./images/services/webp_f/services_2_h232_@3x.webp 3x"
+                    media="(max-width: 1400px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_2_h320_@1x.webp 1x,
+                        ./images/services/webp_f/services_2_h320_@2x.webp 2x,
+                        ./images/services/webp_f/services_2_h320_@3x.webp 3x"
+                    media="(max-width: 1720px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/services/webp_f/services_2_h340_@1x.webp 1x,
+                        ./images/services/webp_f/services_2_h340_@2x.webp 2x,
+                        ./images/services/webp_f/services_2_h340_@3x.webp 3x"
+                    media="(max-width: 1920px)"/>
+                <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_2_h164_@1x.jpg 1x,
                         ./images/services/jpg_f/services_2_h164_@2x.jpg 2x,
                         ./images/services/jpg_f/services_2_h164_@3x.jpg 3x"
                     media="(max-width: 340px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_2_h232_@1x.jpg 1x,
                         ./images/services/jpg_f/services_2_h232_@2x.jpg 2x,
                         ./images/services/jpg_f/services_2_h232_@3x.jpg 3x"
                     media="(max-width: 420px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_2_h340_@1x.jpg 1x,
                         ./images/services/jpg_f/services_2_h340_@2x.jpg 2x,
                         ./images/services/jpg_f/services_2_h340_@3x.jpg 3x"
                     media="(max-width: 767px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_2_h164_@1x.jpg 1x,
                         ./images/services/jpg_f/services_2_h164_@2x.jpg 2x,
                         ./images/services/jpg_f/services_2_h164_@3x.jpg 3x"
                     media="(max-width: 990px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_2_h200_@1x.jpg 1x,
                         ./images/services/jpg_f/services_2_h200_@2x.jpg 2x,
                         ./images/services/jpg_f/services_2_h200_@3x.jpg 3x"
                     media="(max-width: 1200px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_2_h232_@1x.jpg 1x,
                         ./images/services/jpg_f/services_2_h232_@2x.jpg 2x,
                         ./images/services/jpg_f/services_2_h232_@3x.jpg 3x"
                     media="(max-width: 1400px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_2_h320_@1x.jpg 1x,
                         ./images/services/jpg_f/services_2_h320_@2x.jpg 2x,
                         ./images/services/jpg_f/services_2_h320_@3x.jpg 3x"
                     media="(max-width: 1720px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/services/jpg_f/services_2_h340_@1x.jpg 1x,
                         ./images/services/jpg_f/services_2_h340_@2x.jpg 2x,
@@ -262,30 +390,70 @@
         <div class="portfolio__item portfolio__item_normal">
             <picture>
                 <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_1_h300_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_1_h300_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_1_h300_@3x.webp 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_1_h600_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_1_h600_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_1_h600_@3x.webp 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_1_h350_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_1_h350_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_1_h350_@3x.webp 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_1_h592_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_1_h592_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_1_h592_@3x.webp 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_1_h672_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_1_h672_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_1_h672_@3x.webp 3x"
+                    media="(max-width: 1920px)"/>
+                <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_1_h300_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_1_h300_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_1_h300_@3x.jpg 3x"
                     media="(max-width: 420px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_1_h600_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_1_h600_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_1_h600_@3x.jpg 3x"
                     media="(max-width: 767px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_1_h350_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_1_h350_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_1_h350_@3x.jpg 3x"
                     media="(max-width: 990px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_1_h592_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_1_h592_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_1_h592_@3x.jpg 3x"
                     media="(max-width: 1200px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_1_h672_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_1_h672_@2x.jpg 2x,
@@ -297,24 +465,56 @@
         <div class="portfolio__item portfolio__item_small">
             <picture>
                 <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_2_h384_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_2_h384_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_2_h384_@3x.webp 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_2_h600_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_2_h600_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_2_h600_@3x.webp 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_2_h200_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_2_h200_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_2_h200_@3x.webp 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_2_h384_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_2_h384_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_2_h384_@3x.webp 3x"
+                    media="(max-width: 1920px)"/>
+                <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_2_h384_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_2_h384_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_2_h384_@3x.jpg 3x"
                     media="(max-width: 420px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_2_h600_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_2_h600_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_2_h600_@3x.jpg 3x"
                     media="(max-width: 767px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_2_h200_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_2_h200_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_2_h200_@3x.jpg 3x"
                     media="(max-width: 990px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_2_h384_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_2_h384_@2x.jpg 2x,
@@ -326,30 +526,70 @@
         <div class="portfolio__item portfolio__item_normal">
             <picture>
                 <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_3_h300_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_3_h300_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_3_h300_@3x.webp 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_3_h600_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_3_h600_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_3_h600_@3x.webp 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_3_h350_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_3_h350_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_3_h350_@3x.webp 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_3_h592_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_3_h592_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_3_h592_@3x.webp 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_3_h672_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_3_h672_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_3_h672_@3x.webp 3x"
+                    media="(max-width: 1920px)"/>
+                <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_3_h300_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_3_h300_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_3_h300_@3x.jpg 3x"
                     media="(max-width: 420px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_3_h600_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_3_h600_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_3_h600_@3x.jpg 3x"
                     media="(max-width: 767px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_3_h350_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_3_h350_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_3_h350_@3x.jpg 3x"
                     media="(max-width: 990px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_3_h592_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_3_h592_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_3_h592_@3x.jpg 3x"
                     media="(max-width: 1200px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_3_h672_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_3_h672_@2x.jpg 2x,
@@ -361,30 +601,70 @@
         <div class="portfolio__item portfolio__item_normal">
             <picture>
                 <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_4_h300_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_4_h300_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_4_h300_@3x.webp 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_4_h600_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_4_h600_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_4_h600_@3x.webp 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_4_h350_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_4_h350_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_4_h350_@3x.webp 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_4_h592_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_4_h592_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_4_h592_@3x.webp 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_4_h672_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_4_h672_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_4_h672_@3x.webp 3x"
+                    media="(max-width: 1920px)"/>
+                <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_4_h300_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_4_h300_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_4_h300_@3x.jpg 3x"
                     media="(max-width: 420px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_4_h600_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_4_h600_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_4_h600_@3x.jpg 3x"
                     media="(max-width: 767px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_4_h350_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_4_h350_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_4_h350_@3x.jpg 3x"
                     media="(max-width: 990px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_4_h592_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_4_h592_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_4_h592_@3x.jpg 3x"
                     media="(max-width: 1200px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_4_h672_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_4_h672_@2x.jpg 2x,
@@ -396,24 +676,56 @@
         <div class="portfolio__item portfolio__item_small">
             <picture>
                 <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_5_h384_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_5_h384_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_5_h384_@3x.webp 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_5_h600_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_5_h600_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_5_h600_@3x.webp 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_5_h200_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_5_h200_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_5_h200_@3x.webp 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_5_h384_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_5_h384_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_5_h384_@3x.webp 3x"
+                    media="(max-width: 1920px)"/>
+                <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_5_h384_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_5_h384_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_5_h384_@3x.jpg 3x"
                     media="(max-width: 420px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_5_h600_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_5_h600_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_5_h600_@3x.jpg 3x"
                     media="(max-width: 767px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_5_h200_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_5_h200_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_5_h200_@3x.jpg 3x"
                     media="(max-width: 990px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_5_h384_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_5_h384_@2x.jpg 2x,
@@ -425,30 +737,70 @@
         <div class="portfolio__item portfolio__item_normal">
             <picture>
                 <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_6_h300_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_6_h300_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_6_h300_@3x.webp 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_6_h600_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_6_h600_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_6_h600_@3x.webp 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    type="image/webp"                
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_6_h350_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_6_h350_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_6_h350_@3x.webp 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_6_h592_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_6_h592_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_6_h592_@3x.webp 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_6_h672_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_6_h672_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_6_h672_@3x.webp 3x"
+                    media="(max-width: 1920px)"/>
+                <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_6_h300_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_6_h300_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_6_h300_@3x.jpg 3x"
                     media="(max-width: 420px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_6_h600_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_6_h600_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_6_h600_@3x.jpg 3x"
                     media="(max-width: 767px)"/>
                 <source
+                    type="image/jpeg"                
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_6_h350_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_6_h350_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_6_h350_@3x.jpg 3x"
                     media="(max-width: 990px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_6_h592_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_6_h592_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_6_h592_@3x.jpg 3x"
                     media="(max-width: 1200px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_6_h672_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_6_h672_@2x.jpg 2x,
@@ -460,30 +812,70 @@
         <div class="portfolio__item portfolio__item_normal">
             <picture>
                 <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_7_h300_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_7_h300_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_7_h300_@3x.webp 3x"
+                    media="(max-width: 420px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_7_h600_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_7_h600_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_7_h600_@3x.webp 3x"
+                    media="(max-width: 767px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_7_h350_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_7_h350_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_7_h350_@3x.webp 3x"
+                    media="(max-width: 990px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_7_h592_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_7_h592_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_7_h592_@3x.webp 3x"
+                    media="(max-width: 1200px)"/>
+                <source
+                    type="image/webp"
+                    srcset="
+                        ./images/portfolio/webp_f/portfolio_7_h672_@1x.webp 1x,
+                        ./images/portfolio/webp_f/portfolio_7_h672_@2x.webp 2x,
+                        ./images/portfolio/webp_f/portfolio_7_h672_@3x.webp 3x"
+                    media="(max-width: 1920px)"/>
+                <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_7_h300_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_7_h300_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_7_h300_@3x.jpg 3x"
                     media="(max-width: 420px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_7_h600_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_7_h600_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_7_h600_@3x.jpg 3x"
                     media="(max-width: 767px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_7_h350_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_7_h350_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_7_h350_@3x.jpg 3x"
                     media="(max-width: 990px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_7_h592_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_7_h592_@2x.jpg 2x,
                         ./images/portfolio/jpg_f/portfolio_7_h592_@3x.jpg 3x"
                     media="(max-width: 1200px)"/>
                 <source
+                    type="image/jpeg"
                     srcset="
                         ./images/portfolio/jpg_f/portfolio_7_h672_@1x.jpg 1x,
                         ./images/portfolio/jpg_f/portfolio_7_h672_@2x.jpg 2x,
@@ -601,20 +993,75 @@
     </div>
     <div class="form__clients">
         <p class="text text_white form__text">Заполните заявку на нашем сайте, и наши мастера малярного дела воплотят ваши мечты в реальность!</p>
-        <form class="form__person" action="">
+        <form class="form__person" action="" novalidate>
             <div class="form__group">
-                <input class="form__input" type="text" name="name" id="name" placeholder="Имя" required>
-                <label class="form__label" for="name" hidden>Имя</label>
+                <input
+                    class="form__input form__input-fio_js"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Имя (*)"
+                    data-error-message="Разрешены только символы кириллицы."
+                    autocomplete="off"
+                    required>
+                <label
+                    class="form__label"
+                    for="name"
+                    hidden>
+                    Имя
+                </label>
+                <span
+                    class="form__error"
+                    id="name-error"
+                    aria-live="polite">
+                </span>
             </div>
             <div class="form__group">
-                <input class="form__input" type="text" name="phone" id="phone" placeholder="Номер телефона" required>
-                <label class="form__label" for="phone" hidden>Номер телефона</label>
+                <input
+                    class="form__input form__input-number_js"
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Номер телефона (*)"
+                    data-error-message="Разрешены только цифры от 0 до 9."
+                    autocomplete="off"
+                    required>
+                <label
+                    class="form__label"
+                    for="phone"
+                    hidden>
+                    Номер телефона
+                </label>
+                <span
+                    class="form__error"
+                    id="phone-error"
+                    aria-live="polite">
+                </span>
             </div>
             <div class="form__group-line">
-                <input class="input__checkbox" type="checkbox" id="check">
-                <label class="form__checkbox text" for="check">Я ознакомился с Политикой конфиденциальности и даю согласие на обработку персональных данных</label>
+                <input
+                    class="input__checkbox form__input-checkbox-js"
+                    type="checkbox"
+                    id="check"
+                    checked
+                    required>
+                <label
+                    class="form__checkbox text"
+                    for="check">
+                    Я ознакомился с Политикой конфиденциальности и даю согласие на обработку персональных данных
+                </label>
+                <span
+                    class="form__error"
+                    id="checkbox-error"
+                    aria-live="polite">
+                </span>
             </div>
             <button class="button form__btn" type="submit">отправить</button>
+            <span
+                class="form__empty-error"
+                id="empty-error"
+                aria-live="assertive">
+            </span>
         </form>
     </div>
 </section>

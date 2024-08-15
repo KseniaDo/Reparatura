@@ -84,7 +84,7 @@ body {
   box-sizing: border-box;
 }
 
-p, h1, h2, h3, h4, h5, h6, li, a, td, button, label {
+p, h1, h2, h3, h4, h5, h6, li, a, td, button, label, span {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -103,7 +103,7 @@ ul {
   background: url(../images/arrowupIcon_w64.svg) no-repeat center/cover;
   left: 90%;
   top: 90%;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 @media (max-width: 420px) {
   .scrollUp {
@@ -256,13 +256,15 @@ ul {
 }
 
 .button {
-  display: inline-block;
+  display: flex;
   width: 290px;
   height: 64px;
   background-color: #fefefe;
   border: 2px solid #fefefe;
   margin-right: 28px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   line-height: 64px;
   font-size: 20px;
   font-weight: 600;
@@ -274,8 +276,7 @@ ul {
     width: 218px;
     height: 48px;
     font-size: 16px;
-    line-height: 48px;
-    padding-top: 6px;
+    line-height: 1;
   }
 }
 .button_black {
@@ -299,6 +300,13 @@ ul {
     background-image: url(../images/menuIcon_48.svg);
     padding-top: 6px;
   }
+}
+.button-inactive {
+  cursor: not-allowed;
+  background-color: rgba(219, 219, 219, 0.5);
+}
+.button-inactive:hover {
+  background-color: rgba(219, 219, 219, 0.2);
 }
 
 .item_shadow {
@@ -713,58 +721,58 @@ ul {
 
 .common-information {
   background-image: url("../images/common/jpg_f/bg__common_w1920_@1x.jpg");
-  background-image: -webkit-image-set(url("../images/common/jpg_f/bg__common_w1920_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w1920_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w1920_@1x.jpg") 1x);
-  background-image: image-set(url("../images/common/jpg_f/bg__common_w1920_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w1920_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w1920_@1x.jpg") type("image/jpeg") 1x);
+  background-image: -webkit-image-set(url("../images/common/webp_f/bg__common_w1920_@3x.webp") 3x, url("../images/common/webp_f/bg__common_w1920_@2x.webp") 2x, url("../images/common/webp_f/bg__common_w1920_@1x.webp") 1x, url("../images/common/jpg_f/bg__common_w1920_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w1920_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w1920_@1x.jpg") 1x);
+  background-image: image-set(url("../images/common/webp_f/bg__common_w1920_@3x.webp") type("image/webp") 3x, url("../images/common/webp_f/bg__common_w1920_@2x.webp") type("image/webp") 2x, url("../images/common/webp_f/bg__common_w1920_@1x.webp") type("image/webp") 1x, url("../images/common/jpg_f/bg__common_w1920_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w1920_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w1920_@1x.jpg") type("image/jpeg") 1x);
   background-position: no-repeat;
   background-size: cover;
 }
 @media (max-width: 1720px) {
   .common-information {
     background-image: url("../images/common/jpg_f/bg__common_w1720_@1x.jpg");
-    background-image: -webkit-image-set(url("../images/common/jpg_f/bg__common_w1720_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w1720_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w1720_@1x.jpg") 1x);
-    background-image: image-set(url("../images/common/jpg_f/bg__common_w1720_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w1720_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w1720_@1x.jpg") type("image/jpeg") 1x);
+    background-image: -webkit-image-set(url("../images/common/webp_f/bg__common_w1720_@3x.webp") 3x, url("../images/common/webp_f/bg__common_w1720_@2x.webp") 2x, url("../images/common/webp_f/bg__common_w1720_@1x.webp") 1x, url("../images/common/jpg_f/bg__common_w1720_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w1720_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w1720_@1x.jpg") 1x);
+    background-image: image-set(url("../images/common/webp_f/bg__common_w1720_@3x.webp") type("image/webp") 3x, url("../images/common/webp_f/bg__common_w1720_@2x.webp") type("image/webp") 2x, url("../images/common/webp_f/bg__common_w1720_@1x.webp") type("image/webp") 1x, url("../images/common/jpg_f/bg__common_w1720_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w1720_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w1720_@1x.jpg") type("image/jpeg") 1x);
   }
 }
 @media (max-width: 1400px) {
   .common-information {
     background-image: url("../images/common/jpg_f/bg__common_w1400_@1x.jpg");
-    background-image: -webkit-image-set(url("../images/common/jpg_f/bg__common_w1400_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w1400_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w1400_@1x.jpg") 1x);
-    background-image: image-set(url("../images/common/jpg_f/bg__common_w1400_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w1400_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w1400_@1x.jpg") type("image/jpeg") 1x);
+    background-image: -webkit-image-set(url("../images/common/webp_f/bg__common_w1400_@3x.webp") 3x, url("../images/common/webp_f/bg__common_w1400_@2x.webp") 2x, url("../images/common/webp_f/bg__common_w1400_@1x.webp") 1x, url("../images/common/jpg_f/bg__common_w1400_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w1400_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w1400_@1x.jpg") 1x);
+    background-image: image-set(url("../images/common/webp_f/bg__common_w1400_@3x.webp") type("image/webp") 3x, url("../images/common/webp_f/bg__common_w1400_@2x.webp") type("image/webp") 2x, url("../images/common/webp_f/bg__common_w1400_@1x.webp") type("image/webp") 1x, url("../images/common/jpg_f/bg__common_w1400_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w1400_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w1400_@1x.jpg") type("image/jpeg") 1x);
   }
 }
 @media (max-width: 1199px) {
   .common-information {
     background-image: url("../images/common/jpg_f/bg__common_w1200_@1x.jpg");
-    background-image: -webkit-image-set(url("../images/common/jpg_f/bg__common_w1200_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w1200_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w1200_@1x.jpg") 1x);
-    background-image: image-set(url("../images/common/jpg_f/bg__common_w1200_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w1200_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w1200_@1x.jpg") type("image/jpeg") 1x);
+    background-image: -webkit-image-set(url("../images/common/webp_f/bg__common_w1200_@3x.webp") 3x, url("../images/common/webp_f/bg__common_w1200_@2x.webp") 2x, url("../images/common/webp_f/bg__common_w1200_@1x.webp") 1x, url("../images/common/jpg_f/bg__common_w1200_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w1200_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w1200_@1x.jpg") 1x);
+    background-image: image-set(url("../images/common/webp_f/bg__common_w1200_@3x.webp") type("image/webp") 3x, url("../images/common/webp_f/bg__common_w1200_@2x.webp") type("image/webp") 2x, url("../images/common/webp_f/bg__common_w1200_@1x.webp") type("image/webp") 1x, url("../images/common/jpg_f/bg__common_w1200_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w1200_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w1200_@1x.jpg") type("image/jpeg") 1x);
   }
 }
 @media (max-width: 991px) {
   .common-information {
     background-image: url("../images/common/jpg_f/bg__common_w990_@1x.jpg");
-    background-image: -webkit-image-set(url("../images/common/jpg_f/bg__common_w990_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w990_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w990_@1x.jpg") 1x);
-    background-image: image-set(url("../images/common/jpg_f/bg__common_w990_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w990_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w990_@1x.jpg") type("image/jpeg") 1x);
+    background-image: -webkit-image-set(url("../images/common/webp_f/bg__common_w990_@3x.webp") 3x, url("../images/common/webp_f/bg__common_w990_@2x.webp") 2x, url("../images/common/webp_f/bg__common_w990_@1x.webp") 1x, url("../images/common/jpg_f/bg__common_w990_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w990_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w990_@1x.jpg") 1x);
+    background-image: image-set(url("../images/common/webp_f/bg__common_w990_@3x.webp") type("image/webp") 3x, url("../images/common/webp_f/bg__common_w990_@2x.webp") type("image/webp") 2x, url("../images/common/webp_f/bg__common_w990_@1x.webp") type("image/webp") 1x, url("../images/common/jpg_f/bg__common_w990_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w990_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w990_@1x.jpg") type("image/jpeg") 1x);
   }
 }
 @media (max-width: 767px) {
   .common-information {
     background-image: url("../images/common/jpg_f/bg__common_w767_@1x.jpg");
-    background-image: -webkit-image-set(url("../images/common/jpg_f/bg__common_w767_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w767_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w767_@1x.jpg") 1x);
-    background-image: image-set(url("../images/common/jpg_f/bg__common_w767_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w767_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w767_@1x.jpg") type("image/jpeg") 1x);
+    background-image: -webkit-image-set(url("../images/common/webp_f/bg__common_w767_@3x.webp") 3x, url("../images/common/webp_f/bg__common_w767_@2x.webp") 2x, url("../images/common/webp_f/bg__common_w767_@1x.webp") 1x, url("../images/common/jpg_f/bg__common_w767_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w767_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w767_@1x.jpg") 1x);
+    background-image: image-set(url("../images/common/webp_f/bg__common_w767_@3x.webp") type("image/webp") 3x, url("../images/common/webp_f/bg__common_w767_@2x.webp") type("image/webp") 2x, url("../images/common/webp_f/bg__common_w767_@1x.webp") type("image/webp") 1x, url("../images/common/jpg_f/bg__common_w767_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w767_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w767_@1x.jpg") type("image/jpeg") 1x);
   }
 }
 @media (max-width: 420px) {
   .common-information {
     background-image: url("../images/common/jpg_f/bg__common_w420_@1x.jpg");
-    background-image: -webkit-image-set(url("../images/common/jpg_f/bg__common_w420_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w420_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w420_@1x.jpg") 1x);
-    background-image: image-set(url("../images/common/jpg_f/bg__common_w420_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w420_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w420_@1x.jpg") type("image/jpeg") 1x);
+    background-image: -webkit-image-set(url("../images/common/webp_f/bg__common_w420_@3x.webp") 3x, url("../images/common/webp_f/bg__common_w420_@2x.webp") 2x, url("../images/common/webp_f/bg__common_w420_@1x.webp") 1x, url("../images/common/jpg_f/bg__common_w420_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w420_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w420_@1x.jpg") 1x);
+    background-image: image-set(url("../images/common/webp_f/bg__common_w420_@3x.webp") type("image/webp") 3x, url("../images/common/webp_f/bg__common_w420_@2x.webp") type("image/webp") 2x, url("../images/common/webp_f/bg__common_w420_@1x.webp") type("image/webp") 1x, url("../images/common/jpg_f/bg__common_w420_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w420_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w420_@1x.jpg") type("image/jpeg") 1x);
   }
 }
 @media (max-width: 340px) {
   .common-information {
     background-image: url("../images/common/jpg_f/bg__common_w340_@1x.jpg");
-    background-image: -webkit-image-set(url("../images/common/jpg_f/bg__common_w340_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w340_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w340_@1x.jpg") 1x);
-    background-image: image-set(url("../images/common/jpg_f/bg__common_w340_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w340_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w340_@1x.jpg") type("image/jpeg") 1x);
+    background-image: -webkit-image-set(url("../images/common/webp_f/bg__common_w340_@3x.webp") 3x, url("../images/common/webp_f/bg__common_w340_@2x.webp") 2x, url("../images/common/webp_f/bg__common_w340_@1x.webp") 1x, url("../images/common/jpg_f/bg__common_w340_@3x.jpg") 3x, url("../images/common/jpg_f/bg__common_w340_@2x.jpg") 2x, url("../images/common/jpg_f/bg__common_w340_@1x.jpg") 1x);
+    background-image: image-set(url("../images/common/webp_f/bg__common_w340_@3x.webp") type("image/webp") 3x, url("../images/common/webp_f/bg__common_w340_@2x.webp") type("image/webp") 2x, url("../images/common/webp_f/bg__common_w340_@1x.webp") type("image/webp") 1x, url("../images/common/jpg_f/bg__common_w340_@3x.jpg") type("image/jpeg") 3x, url("../images/common/jpg_f/bg__common_w340_@2x.jpg") type("image/jpeg") 2x, url("../images/common/jpg_f/bg__common_w340_@1x.jpg") type("image/jpeg") 1x);
   }
 }
 
@@ -1256,7 +1264,7 @@ ul {
 }
 @media (max-width: 767px) {
   .stages__table {
-    width: 250%;
+    width: 300%;
   }
 }
 
@@ -1590,6 +1598,22 @@ ul {
   justify-content: start;
   align-items: flex-start;
   gap: 44px;
+}
+
+.form__empty-error {
+  padding: 10px 0;
+  font-size: 20px;
+  color: #fdcd00;
+}
+
+.form__error-active {
+  display: block;
+  color: #fdcd00;
+}
+
+.form__type-input-error {
+  border: 1px solid #fdcd00;
+  background-color: rgba(117, 117, 117, 0.1);
 }
 
 .footer {
