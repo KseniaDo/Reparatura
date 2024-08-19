@@ -1,0 +1,76 @@
+@use "sass:map";
+
+.faq {
+    width: 100vw;
+    max-width: 100%;
+    @include grid(3, space-between);
+    padding: 20px;
+
+    @media (max-width: map.get($breakpoints, small)) {
+        display: block;
+    }
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        padding: 16px;
+    }
+}
+
+.faq__heading {
+    width: 50%;
+}
+
+.section-faq {
+    @include section-padding(46, 36);
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        @include section-padding(35, 25);
+    }
+}
+
+.faq__questions {
+    grid-column: 2 / span 2;
+}
+
+.list__btn:focus-visible {
+    outline: 2px solid;
+    outline-offset: -3px;
+}
+
+.list {
+    background-color: $white;
+}
+
+.list__item {
+    padding-top: 20px;
+}
+
+.list__btn {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    background: transparent;
+    padding: 0 0 20px 0;
+
+    text-align: left;
+    font-size: #{map.get($sizeFont, s_2)}px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        font-size: #{map.get($sizeFont, xs_1)}px;
+        padding: 0 0 12px 0;
+    }
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        font-size: #{map.get($sizeFont, xs_3)}px;
+        padding: 0 0 8px 0;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        font-size: #{map.get($sizeFont, xs_2)}px;
+        padding: 0 0 8px 0;
+    }
+}

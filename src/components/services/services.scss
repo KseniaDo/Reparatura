@@ -1,0 +1,84 @@
+@use "sass:map";
+
+.services {
+    width: 100vw;
+    max-width: 100%;
+    padding: 20px;
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        padding: 16px;
+    }
+}
+
+.section-services {
+    @include section-padding(15, 36);
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        @include section-padding(12, 25);
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        @include section-padding(5, 5);
+    }
+}
+
+.services__elements {
+    @include grid(3);
+    grid-template-rows: repeat(2, 38%);
+
+    @media (max-width: map.get($breakpoints, small)) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+.services__heading {
+    padding-bottom: 52px;
+}
+
+.services__item {
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: 60px;
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        padding-left: 40px;
+    }
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        padding-left: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        padding-left: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        width: 70%;
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        width: 90%;
+    }
+
+    &_crop {
+        @media (max-width: map.get($breakpoints, small)) {
+            width: 70%;
+        }
+
+        @media (max-width: map.get($breakpoints, xs_small)) {
+            width: 90%;
+        }
+    }
+}
+
+.services__header_small {
+    font-size: #{map.get($sizeFont, s_3)}px;
+}

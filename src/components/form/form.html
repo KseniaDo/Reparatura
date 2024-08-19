@@ -1,0 +1,87 @@
+<section class="form section-form" id="form">
+    <div class="form__contacts">
+        <h2 class="heading form__heading text_white"><p class="text_red">ищете профессионалов</p><p class="text_white">для идеальной отделки?</p></h2>
+        <div class="form__links_main">
+            <a class="link_nodecoration" href="tel:+79999999999"><p class="text text_white text_uppercase text_width_100">+7(999) 999-99-99</p></a>
+            <a class="link_nodecoration" href="mailto:test@test.com"><p class="text text_white text_uppercase text_width_100">test@test.com</p></a>
+        </div>
+        <div class="form__links">
+            <div class="form_link"></div>
+            <div class="form_link"></div>
+            <div class="form_link"></div>
+        </div>
+    </div>
+    <div class="form__clients">
+        <p class="text text_white form__text">Заполните заявку на нашем сайте, и наши мастера малярного дела воплотят ваши мечты в реальность!</p>
+        <form class="form__person" action="" novalidate>
+            <div class="form__group">
+                <input
+                    class="form__input form__input-fio_js"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Имя (*)"
+                    data-error-message="Разрешены только символы кириллицы."
+                    autocomplete="off"
+                    required>
+                <label
+                    class="form__label"
+                    for="name"
+                    hidden>
+                    Имя
+                </label>
+                <span
+                    class="form__error"
+                    id="name-error"
+                    aria-live="polite">
+                </span>
+            </div>
+            <div class="form__group">
+                <input
+                    class="form__input form__input-number_js"
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Номер телефона (*)"
+                    data-error-message="Разрешены только цифры от 0 до 9."
+                    autocomplete="off"
+                    required>
+                <label
+                    class="form__label"
+                    for="phone"
+                    hidden>
+                    Номер телефона
+                </label>
+                <span
+                    class="form__error"
+                    id="phone-error"
+                    aria-live="polite">
+                </span>
+            </div>
+            <div class="form__group-line">
+                <input
+                    class="input__checkbox form__input-checkbox-js"
+                    type="checkbox"
+                    id="check"
+                    checked
+                    required>
+                <label
+                    class="form__checkbox text"
+                    for="check">
+                    Я ознакомился с Политикой конфиденциальности и даю согласие на обработку персональных данных
+                </label>
+                <span
+                    class="form__error"
+                    id="checkbox-error"
+                    aria-live="polite">
+                </span>
+            </div>
+            <button class="button form__btn" type="submit">отправить</button>
+            <span
+                class="form__empty-error"
+                id="empty-error"
+                aria-live="assertive">
+            </span>
+        </form>
+    </div>
+</section>

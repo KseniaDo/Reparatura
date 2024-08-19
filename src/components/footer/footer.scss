@@ -1,0 +1,50 @@
+@use "sass:map";
+
+.footer {
+    width: 100vw;
+    max-width: 100%;
+    padding: 20px;
+    background-color: black;
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        padding: 16px;
+    }
+}
+
+.footer__contacts {
+    @include flex($justifyContent: space-between);
+
+    .text {
+        font-size: 16px;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        flex-direction: column;
+    }
+}
+
+.footer__heading {
+    padding-bottom: 244px;
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        padding-bottom: 200px;
+    }
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        padding-bottom: 160px;
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        padding-bottom: 100px;
+    }
+}
+
+.footer__contact {
+    color: $white;
+    padding-bottom: 64px;
+    font-weight: 300;
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        padding-bottom: 20px;
+    }
+}

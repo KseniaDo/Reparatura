@@ -1,0 +1,219 @@
+@use "sass:map";
+
+.header {
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+    gap: 20px;
+
+    padding: 10px;
+
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        grid-template-columns: 1fr 50% 1fr;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        grid-template-columns: 1fr 1% 1fr;
+    }
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        padding: 4px;
+    }
+}
+
+.modal-window__logo {
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.navigation {
+    text-align: center;
+}
+
+.header__interactive {
+    @include flex(row, flex-end, center);
+
+    @media (max-width: map.get($breakpoints, small)) {
+        justify-content: space-between;
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        justify-content: end;
+    }
+}
+
+.navigation__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+
+    @media (max-width: map.get($breakpoints, small)) {
+        display: none;
+    }
+
+    &_column {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        text-align: left;
+        padding: 0;
+
+        margin-top: 32px;
+        flex-direction: column;
+    }
+}
+
+.navigation__item {
+    display: inline-block;
+    padding: 0 12px;
+    margin: 0;
+
+    text-transform: capitalize;
+    font-size: #{map.get($sizeFont, s_2)}px;
+    letter-spacing: 2px;
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        font-size: #{map.get($sizeFont, xs_1)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, desktop)) {
+        font-size: #{map.get($sizeFont, xs_2)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        padding: 0 8px;
+
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        padding: 0 4px;
+
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+.header__contacts {
+    text-align: right;
+    letter-spacing: 2px;
+    font-size: #{map.get($sizeFont, s_2)}px;
+
+    padding-right: 40px;
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        font-size: #{map.get($sizeFont, xs_3)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        padding-right: 16px;
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        display: none;
+    }
+}
+
+.header__button {
+    margin-right: 12px;
+}
+
+.modal-window {
+    position: fixed;
+    height: 100%;
+    min-height: 100%;
+    width: 26%;
+    left: 74%;
+    top: 0%;
+
+    border: none;
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        width: 30%;
+        left: 70%;
+    }
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        width: 35%;
+        left: 65%;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        width: 100%;
+        min-width: 100%;
+        left: 0;
+    }
+}
+
+.modal-window__content {
+    @include flex(column);
+    padding: 20px;
+
+    @media (max-width: map.get($breakpoints, small)) {
+        align-items: center;
+    }
+}
+
+.scroll-lock {
+    overflow: hidden;
+}
+
+.modal__button_close {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: $white;
+    background-image: url(../images/closeIcon48.svg);
+
+    align-self: flex-end;
+}
+
+.navigation__item_block {
+    display: block;
+    margin-bottom: 40px;
+
+    text-transform: capitalize;
+    font-size: #{map.get($sizeFont, xs_1)}px;
+
+    @media (max-width: map.get($breakpoints, small)) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.modal-window__button {
+    margin-top: 28px;
+    margin-bottom: 28px;
+
+    width: 72%;
+    height: 68px;
+    line-height: 3;
+
+    background-color: black;
+
+    color: $white;
+
+    @media (max-width: map.get($breakpoints, small)) {
+        width: 50%;
+        margin-right: 0;
+    }
+}
+
+.modal-window__contacts {
+    padding-top: 28px;
+
+    font-size: #{map.get($sizeFont, s_3)}px;
+    text-transform: uppercase;
+    font-weight: 600;
+}

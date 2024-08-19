@@ -1,0 +1,66 @@
+@use "sass:map";
+
+.cost {
+    width: 100vw;
+    max-width: 100%;
+    @include grid(3, $justifyContent: end);
+    row-gap: 0;
+    padding: 20px;
+
+    @media (max-width: map.get($breakpoints, small)) {
+        display: block;
+    }
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        padding: 16px;
+    }
+}
+
+.cost__heading {
+    width: 50%;
+    
+    @media (max-width: map.get($breakpoints, small)) {
+        padding-bottom: 48px;
+    }
+}
+
+.section-cost {
+    @include section-padding(15, 36);
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        @include section-padding(12, 25);
+    }
+}
+
+.cost__table {
+    grid-column: 2 / span 2;
+
+    border-collapse: collapse;
+
+    @media (max-width: map.get($breakpoints, small)) {
+        width: 100%;
+        margin-top: 24px;
+    }
+}
+
+.cost__cost {
+    text-align: right;
+    font-weight: 500;
+    table-layout: auto;
+    width: 100px;
+    white-space: nowrap;
+}
+
+.cost__row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.cost__name, .cost__cost {
+    padding-top: 16px;
+    padding-bottom: 8px;
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        padding-top: 8px;
+        padding-bottom: 4px;
+    }
+}

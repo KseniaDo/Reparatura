@@ -1,0 +1,499 @@
+@use "sass:map";
+
+$white: #fefefe;
+$yellow: #fdcd00;
+$red: #fe0000;
+
+$breakpoints: (
+    xxs_small: 340px,
+    xs_small: 420px,
+    small: 767px,
+    small_vertical: 991px,
+    normal: 1199px,
+    laptop: 1339px,
+    desktop: 1400px,
+    big_desktop: 1720px
+);
+
+$sizeFont: (
+    xs_3: 12,
+    xs_2: 16,
+    xs_1: 20,
+    s_3: 24,
+    s_2: 28,
+    s_1: 32,
+    m_3: 36,
+    m_2: 48,
+    m_1: 52,
+    l_3: 60,
+    l_2: 64,
+    l_1: 68,
+    xl_3: 72,
+    xl_2: 76,
+    xl_1: 80
+);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:where(ul, ol):where([class]) {
+    padding-left: 0;
+}
+
+body,
+:where(blockquote, figure):where([class]) {
+    margin: 0;
+}
+
+:where(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul,
+    ol,
+    dl
+):where([class]) {
+    margin-block: 0;
+}
+
+:where(dd[class]) {
+    margin-left: 0;
+}
+
+:where(ul[class]) {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+    font: inherit;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100%;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.pixel-perfect-image {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(145%) scale(3.9);
+    opacity: 0.5;
+}
+
+@mixin section-padding($xTop, $xBottom){
+    padding-top: #{$xTop * 4}px;
+    padding-bottom: #{$xBottom * 4}px;
+}
+
+@mixin grid($numberColumn, $justifyContent: normal, $alignItems: normal) {
+    display: grid;
+    grid-template-columns: repeat($numberColumn, 1fr);
+    gap: 64px;
+
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+@mixin flex($flexDirection: row, $justifyContent: normal, $alignItems: normal, $flexWrap: nowrap) {
+    display: flex;
+    flex-direction: $flexDirection;
+    flex-wrap: $flexWrap;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6, li, a, td, button, label, span {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.scrollUp {
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    background: url(../images/arrowupIcon_w64.svg) no-repeat center / cover;
+    left: 90%;
+    top: 90%;
+    opacity: 0.7;
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        width: 48px;
+        height: 48px;
+        background-image: url(../images/arrowupIcon_w48.svg);
+        left: 80%;
+    }
+}
+
+.text {
+    font-size: #{map.get($sizeFont, s_3)}px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    color: black;
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        font-size: #{map.get($sizeFont, xs_1)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        font-size: #{map.get($sizeFont, xs_2)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        font-size: #{map.get($sizeFont, xs_3)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        width: 90%;
+        font-size: #{map.get($sizeFont, s_3)}px;
+        padding-bottom: 12px;
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        width: 90%;
+        font-size: #{map.get($sizeFont, xs_2)}px;
+        padding-bottom: 12px;
+    }
+
+    &_red {
+        color: $red;
+    }
+
+    &_white {
+        color: $white;
+    }
+
+    &_uppercase {
+        text-transform: uppercase;
+    }
+
+    &_width_100 {
+        width: 100%;
+    }
+}
+
+.logo {
+    width: 320px;
+    height: 80px;
+    background-color: $white;
+    background: url(../images/logo_w320.svg) no-repeat center / cover;
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        width: 240px;
+        height: 60px;
+        background-image: url(../images/logo_w240.svg);
+    }
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        width: 120px;
+        height: 30px;
+        background-image: url(../images/logo_w120.svg);
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        width: 320px;
+        height: 80px;
+        background-image: url(../images/logo_w320.svg);
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        width: 240px;
+        height: 60px;
+        background-image: url(../images/logo_w240.svg);
+    }
+}
+
+.heading {
+    text-transform: uppercase;
+    font-size: #{map.get($sizeFont, xl_2)}px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    padding-bottom: 10px;
+
+    @media (max-width: map.get($breakpoints, desktop)) {
+        font-size: #{map.get($sizeFont, l_1)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        font-size: #{map.get($sizeFont, l_3)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        font-size: #{map.get($sizeFont, m_1)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        font-size: #{map.get($sizeFont, m_2)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        font-size: #{map.get($sizeFont, xl_2)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        font-size: #{map.get($sizeFont, m_2)}px;
+    }
+
+    &_line-height_1 {
+        line-height: 1;
+    }
+
+    &_small {
+        font-size: #{map.get($sizeFont, xl_1)}px;
+
+        @media (max-width: map.get($breakpoints, desktop)) {
+            font-size: #{map.get($sizeFont, l_3)}px;
+        }
+
+        @media (max-width: map.get($breakpoints, normal)) {
+            font-size: #{map.get($sizeFont, m_2)}px;
+        }
+    }
+}
+
+.link_nodecoration {
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    width: 290px;
+    height: 64px;
+    background-color: $white;
+    border: 2px solid $white;
+    margin-right: 28px;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 64px;
+    font-size: #{map.get($sizeFont, xs_1)}px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        width: 218px;
+        height: 48px;
+
+        font-size: #{map.get($sizeFont, xs_2)}px;
+        line-height: 1;
+    }
+
+    &_black {
+        background-color: black;
+        border: 5px solid black;
+
+        color: $white;
+    }
+
+    &_transparent {
+        background-color: transparent;
+
+        color: $white;
+    }
+
+    &_small {
+        width: 64px;
+        padding-top: 8px;
+        background: url(../images/menuIcon64.svg) no-repeat center / cover;
+
+        @media (max-width: map.get($breakpoints, normal)) {
+            width: 48px;
+            height: 48px;
+            background-image: url(../images/menuIcon_48.svg);
+
+            padding-top: 6px;
+        }
+    }
+
+    &-inactive {
+        cursor: not-allowed;
+        background-color: rgba(219, 219, 219, 0.5);
+    }
+
+    &-inactive:hover {
+        background-color: rgba(219, 219, 219, 0.2);
+    }
+}
+
+.item_shadow {
+    background-color: $white;
+    box-shadow: 2px 2px 0 0 black;
+}
+
+.item__heading {
+    margin-top: 64px;
+
+
+    font-size: #{map.get($sizeFont, m_1)}px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        margin-top: 48px;
+
+        font-size: #{map.get($sizeFont, s_1)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        margin-top: 48px;
+
+        font-size: #{map.get($sizeFont, l_2)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        margin-top: 40px;
+
+        font-size: #{map.get($sizeFont, m_2)}px;
+    }
+
+    &_small {
+        margin-top: 40px;
+        font-size: #{map.get($sizeFont, s_2)}px;
+
+        @media (max-width: map.get($breakpoints, big_desktop)) {
+            margin-top: 24px;
+        }
+
+        @media (max-width: map.get($breakpoints, desktop)) {
+            margin-top: 8px;
+        }
+
+        @media (max-width: map.get($breakpoints, laptop)) {
+            margin-top: 0;
+            font-size: #{map.get($sizeFont, xs_1)}px;
+        }
+
+        @media (max-width: map.get($breakpoints, small_vertical)) {
+            margin-top: 0;
+            font-size: #{map.get($sizeFont, xs_2)}px;
+        }
+
+        @media (max-width: map.get($breakpoints, small)) {
+            margin-top: 20px;
+            font-size: #{map.get($sizeFont, s_2)}px;
+        }
+
+        @media (max-width: map.get($breakpoints, xs_small)) {
+            margin-top: 8px;
+            font-size: #{map.get($sizeFont, s_3)}px;
+        }
+    }
+}
+
+.item__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+
+    @media (max-width: map.get($breakpoints, small)) {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
+.item__text {
+    width: 75%;
+    margin-top: 20px;
+
+    &_small {
+        width: 95%;
+
+        @media (max-width: map.get($breakpoints, laptop)) {
+            margin-top: 12px;
+        }
+    }
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        margin-top: 12px;
+    }
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        width: 85%;
+        margin-top: 8px;
+    }
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        width: 95%;
+        margin-top: 0;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        width: 75%;
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        margin-top: 8px;
+    }
+}
+
+.devider {
+    width: 100%;
+    height: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+
+    background-color: black;
+
+    &_red {
+        background-color: $red;
+    }
+
+    &_yellow {
+        background-color: $yellow;
+    }
+}

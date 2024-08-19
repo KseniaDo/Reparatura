@@ -1,0 +1,279 @@
+@use "sass:map";
+
+.common {
+    width: 100vw;
+    max-width: 100%;
+    background-color: $white;
+}
+
+.section-common {
+    @include section-padding(0, 36);
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        @include section-padding(0, 25);
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        @include section-padding(0, 5);
+    }
+}
+
+.common-information__heading {
+    width: 55%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.common-information {
+    padding: 20px;
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        padding: 16px;
+    }
+}
+
+.common-advantages {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.common-information {
+    background-image: url("../images/common/jpg_f/bg__common_w1920_@1x.jpg");
+
+    background-image: -webkit-image-set(
+        url("../images/common/webp_f/bg__common_w1920_@3x.webp") 3x, 
+        url("../images/common/webp_f/bg__common_w1920_@2x.webp") 2x,
+        url("../images/common/webp_f/bg__common_w1920_@1x.webp") 1x,
+        url("../images/common/jpg_f/bg__common_w1920_@3x.jpg") 3x, 
+        url("../images/common/jpg_f/bg__common_w1920_@2x.jpg") 2x,
+        url("../images/common/jpg_f/bg__common_w1920_@1x.jpg") 1x
+        );
+
+    background-image: image-set(
+        url("../images/common/webp_f/bg__common_w1920_@3x.webp") type("image/webp") 3x, 
+        url("../images/common/webp_f/bg__common_w1920_@2x.webp") type("image/webp") 2x,
+        url("../images/common/webp_f/bg__common_w1920_@1x.webp") type("image/webp") 1x,
+        url("../images/common/jpg_f/bg__common_w1920_@3x.jpg") type("image/jpeg") 3x,
+        url("../images/common/jpg_f/bg__common_w1920_@2x.jpg") type("image/jpeg") 2x,
+        url("../images/common/jpg_f/bg__common_w1920_@1x.jpg") type("image/jpeg") 1x
+        );
+    background-position: no-repeat;
+    background-size: cover;
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        background-image: url("../images/common/jpg_f/bg__common_w1720_@1x.jpg");
+
+        background-image: -webkit-image-set(
+            url("../images/common/webp_f/bg__common_w1720_@3x.webp") 3x, 
+            url("../images/common/webp_f/bg__common_w1720_@2x.webp") 2x,
+            url("../images/common/webp_f/bg__common_w1720_@1x.webp") 1x,
+            url("../images/common/jpg_f/bg__common_w1720_@3x.jpg") 3x, 
+            url("../images/common/jpg_f/bg__common_w1720_@2x.jpg") 2x,
+            url("../images/common/jpg_f/bg__common_w1720_@1x.jpg") 1x
+            );
+
+        background-image: image-set(
+            url("../images/common/webp_f/bg__common_w1720_@3x.webp") type("image/webp") 3x, 
+            url("../images/common/webp_f/bg__common_w1720_@2x.webp") type("image/webp") 2x,
+            url("../images/common/webp_f/bg__common_w1720_@1x.webp") type("image/webp") 1x,
+            url("../images/common/jpg_f/bg__common_w1720_@3x.jpg") type("image/jpeg") 3x,
+            url("../images/common/jpg_f/bg__common_w1720_@2x.jpg") type("image/jpeg") 2x,
+            url("../images/common/jpg_f/bg__common_w1720_@1x.jpg") type("image/jpeg") 1x
+            );
+    }
+
+    @media (max-width: map.get($breakpoints, desktop)) {
+        background-image: url("../images/common/jpg_f/bg__common_w1400_@1x.jpg");
+
+        background-image: -webkit-image-set(
+            url("../images/common/webp_f/bg__common_w1400_@3x.webp") 3x, 
+            url("../images/common/webp_f/bg__common_w1400_@2x.webp") 2x,
+            url("../images/common/webp_f/bg__common_w1400_@1x.webp") 1x,
+            url("../images/common/jpg_f/bg__common_w1400_@3x.jpg") 3x, 
+            url("../images/common/jpg_f/bg__common_w1400_@2x.jpg") 2x,
+            url("../images/common/jpg_f/bg__common_w1400_@1x.jpg") 1x
+            );
+
+        background-image: image-set(
+            url("../images/common/webp_f/bg__common_w1400_@3x.webp") type("image/webp") 3x, 
+            url("../images/common/webp_f/bg__common_w1400_@2x.webp") type("image/webp") 2x,
+            url("../images/common/webp_f/bg__common_w1400_@1x.webp") type("image/webp") 1x,
+            url("../images/common/jpg_f/bg__common_w1400_@3x.jpg") type("image/jpeg") 3x,
+            url("../images/common/jpg_f/bg__common_w1400_@2x.jpg") type("image/jpeg") 2x,
+            url("../images/common/jpg_f/bg__common_w1400_@1x.jpg") type("image/jpeg") 1x
+            );
+    }
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        background-image: url("../images/common/jpg_f/bg__common_w1200_@1x.jpg");
+
+        background-image: -webkit-image-set(
+            url("../images/common/webp_f/bg__common_w1200_@3x.webp") 3x, 
+            url("../images/common/webp_f/bg__common_w1200_@2x.webp") 2x,
+            url("../images/common/webp_f/bg__common_w1200_@1x.webp") 1x,
+            url("../images/common/jpg_f/bg__common_w1200_@3x.jpg") 3x, 
+            url("../images/common/jpg_f/bg__common_w1200_@2x.jpg") 2x,
+            url("../images/common/jpg_f/bg__common_w1200_@1x.jpg") 1x
+            );
+
+        background-image: image-set(
+            url("../images/common/webp_f/bg__common_w1200_@3x.webp") type("image/webp") 3x, 
+            url("../images/common/webp_f/bg__common_w1200_@2x.webp") type("image/webp") 2x,
+            url("../images/common/webp_f/bg__common_w1200_@1x.webp") type("image/webp") 1x,
+            url("../images/common/jpg_f/bg__common_w1200_@3x.jpg") type("image/jpeg") 3x,
+            url("../images/common/jpg_f/bg__common_w1200_@2x.jpg") type("image/jpeg") 2x,
+            url("../images/common/jpg_f/bg__common_w1200_@1x.jpg") type("image/jpeg") 1x
+            );
+    }
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        background-image: url("../images/common/jpg_f/bg__common_w990_@1x.jpg");
+
+        background-image: -webkit-image-set(
+            url("../images/common/webp_f/bg__common_w990_@3x.webp") 3x, 
+            url("../images/common/webp_f/bg__common_w990_@2x.webp") 2x,
+            url("../images/common/webp_f/bg__common_w990_@1x.webp") 1x,
+            url("../images/common/jpg_f/bg__common_w990_@3x.jpg") 3x, 
+            url("../images/common/jpg_f/bg__common_w990_@2x.jpg") 2x,
+            url("../images/common/jpg_f/bg__common_w990_@1x.jpg") 1x
+            );
+
+        background-image: image-set(
+            url("../images/common/webp_f/bg__common_w990_@3x.webp") type("image/webp") 3x, 
+            url("../images/common/webp_f/bg__common_w990_@2x.webp") type("image/webp") 2x,
+            url("../images/common/webp_f/bg__common_w990_@1x.webp") type("image/webp") 1x,
+            url("../images/common/jpg_f/bg__common_w990_@3x.jpg") type("image/jpeg") 3x,
+            url("../images/common/jpg_f/bg__common_w990_@2x.jpg") type("image/jpeg") 2x,
+            url("../images/common/jpg_f/bg__common_w990_@1x.jpg") type("image/jpeg") 1x
+            );
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        background-image: url("../images/common/jpg_f/bg__common_w767_@1x.jpg");
+
+        background-image: -webkit-image-set(
+            url("../images/common/webp_f/bg__common_w767_@3x.webp") 3x, 
+            url("../images/common/webp_f/bg__common_w767_@2x.webp") 2x,
+            url("../images/common/webp_f/bg__common_w767_@1x.webp") 1x,
+            url("../images/common/jpg_f/bg__common_w767_@3x.jpg") 3x, 
+            url("../images/common/jpg_f/bg__common_w767_@2x.jpg") 2x,
+            url("../images/common/jpg_f/bg__common_w767_@1x.jpg") 1x
+            );
+
+        background-image: image-set(
+            url("../images/common/webp_f/bg__common_w767_@3x.webp") type("image/webp") 3x, 
+            url("../images/common/webp_f/bg__common_w767_@2x.webp") type("image/webp") 2x,
+            url("../images/common/webp_f/bg__common_w767_@1x.webp") type("image/webp") 1x,
+            url("../images/common/jpg_f/bg__common_w767_@3x.jpg") type("image/jpeg") 3x,
+            url("../images/common/jpg_f/bg__common_w767_@2x.jpg") type("image/jpeg") 2x,
+            url("../images/common/jpg_f/bg__common_w767_@1x.jpg") type("image/jpeg") 1x
+            );
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        background-image: url("../images/common/jpg_f/bg__common_w420_@1x.jpg");
+
+        background-image: -webkit-image-set(
+            url("../images/common/webp_f/bg__common_w420_@3x.webp") 3x, 
+            url("../images/common/webp_f/bg__common_w420_@2x.webp") 2x,
+            url("../images/common/webp_f/bg__common_w420_@1x.webp") 1x,
+            url("../images/common/jpg_f/bg__common_w420_@3x.jpg") 3x, 
+            url("../images/common/jpg_f/bg__common_w420_@2x.jpg") 2x,
+            url("../images/common/jpg_f/bg__common_w420_@1x.jpg") 1x
+            );
+
+        background-image: image-set(
+            url("../images/common/webp_f/bg__common_w420_@3x.webp") type("image/webp") 3x, 
+            url("../images/common/webp_f/bg__common_w420_@2x.webp") type("image/webp") 2x,
+            url("../images/common/webp_f/bg__common_w420_@1x.webp") type("image/webp") 1x,
+            url("../images/common/jpg_f/bg__common_w420_@3x.jpg") type("image/jpeg") 3x,
+            url("../images/common/jpg_f/bg__common_w420_@2x.jpg") type("image/jpeg") 2x,
+            url("../images/common/jpg_f/bg__common_w420_@1x.jpg") type("image/jpeg") 1x
+            );
+    }
+
+    @media (max-width: map.get($breakpoints, xxs_small)) {
+        background-image: url("../images/common/jpg_f/bg__common_w340_@1x.jpg");
+
+        background-image: -webkit-image-set(
+            url("../images/common/webp_f/bg__common_w340_@3x.webp") 3x, 
+            url("../images/common/webp_f/bg__common_w340_@2x.webp") 2x,
+            url("../images/common/webp_f/bg__common_w340_@1x.webp") 1x,
+            url("../images/common/jpg_f/bg__common_w340_@3x.jpg") 3x, 
+            url("../images/common/jpg_f/bg__common_w340_@2x.jpg") 2x,
+            url("../images/common/jpg_f/bg__common_w340_@1x.jpg") 1x
+            );
+
+        background-image: image-set(
+            url("../images/common/webp_f/bg__common_w340_@3x.webp") type("image/webp") 3x, 
+            url("../images/common/webp_f/bg__common_w340_@2x.webp") type("image/webp") 2x,
+            url("../images/common/webp_f/bg__common_w340_@1x.webp") type("image/webp") 1x,
+            url("../images/common/jpg_f/bg__common_w340_@3x.jpg") type("image/jpeg") 3x,
+            url("../images/common/jpg_f/bg__common_w340_@2x.jpg") type("image/jpeg") 2x,
+            url("../images/common/jpg_f/bg__common_w340_@1x.jpg") type("image/jpeg") 1x
+            );
+    }
+}
+
+.common-advantages {
+    @include grid(3, space-between);
+    background-color: $white;
+
+    @media (max-width: map.get($breakpoints, small)) {
+        display: block;
+    }
+}
+
+.common-information__button {
+    margin-top: 60px;
+    margin-bottom: 44px;
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        margin-top: 42px;
+        margin-bottom: 24px;
+    }
+
+}
+
+.subtitle {
+    width: 30%;
+    font-size: #{map.get($sizeFont, s_3)}px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    color: $white;
+
+    margin-bottom: 40px;
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        width: 35%;
+    }
+
+    @media (max-width: map.get($breakpoints, desktop)) {
+        width: 42%;
+    }
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        width: 40%;
+    }
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        width: 45%;
+    }
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        font-size: #{map.get($sizeFont, xs_2)}px;
+        width: 40%;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        font-size: #{map.get($sizeFont, s_3)}px;
+        width: 75%;
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        font-size: #{map.get($sizeFont, xs_1)}px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+}

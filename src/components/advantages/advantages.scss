@@ -1,0 +1,42 @@
+@use "sass:map";
+
+.advantages {
+    width: 100vw;
+    max-width: 100%;
+    @include grid(3, space-between);
+
+    grid-template-rows: auto auto;
+    row-gap: 16px;
+    padding: 20px;
+
+    @media (max-width: map.get($breakpoints, small)) {
+        display: block;
+    }
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        padding: 16px;
+    }
+}
+
+.advantages__heading {
+    @media (max-width: map.get($breakpoints, small)) {
+        padding-bottom: 48px;
+    }
+}
+
+.section-advantages {
+    @include section-padding(15, 36);
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        @include section-padding(12, 25);
+    }
+}
+
+.advantages-item__heading {
+    padding: 0;
+    margin-top: 12px;
+
+    @media (max-width: map.get($breakpoints, small_vertical)) {
+        margin-top: 48px;
+    }
+}

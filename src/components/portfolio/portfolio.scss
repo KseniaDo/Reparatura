@@ -1,0 +1,120 @@
+@use "sass:map";
+
+.portfolio {
+    width: 100vw;
+    max-width: 100%;
+    padding: 20px;
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        padding: 16px;
+    }
+}
+
+.section-portfolio {
+    @include section-padding(15, 36);
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        @include section-padding(12, 25);
+    }
+}
+
+.portfolio__heading {
+    padding-top: 20px;
+}
+
+.portfolio__content {
+    margin-top: 48px;
+    @include flex(column, $flexWrap: wrap);
+    gap: 64px 20px;
+    height: 2200px;
+    width: 100%;
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        height: 2000px;
+    }
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        height: 1200px;
+        gap: 36px 16px;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        height: 4500px;
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        flex-direction: column;
+        align-items: center;
+        column-gap: 12px;
+        height: auto;
+    }
+}
+
+.portfolio__item {
+    width: calc(93% / 3);
+}
+
+.portfolio__item_normal {
+    height: 672px;
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        height: 592px;
+    }
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        height: 350px;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        width: 600px;
+        height: 600px;
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.portfolio__item_small {
+    height: 384px;
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        height: 300px;
+    }
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        height: 200px;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        width: 600px;
+        height: 600px;
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.portfolio__item:nth-child(3n + 1) { order: 1; }
+.portfolio__item:nth-child(3n + 2) { order: 2; }
+.portfolio__item:nth-child(3n) { order: 3; }
+
+
+
+
+.portfolio__content::before,
+.portfolio__content::after {
+    @media (min-width: map.get($breakpoints, small)) {
+        content: "";
+        flex-basis: 100%;
+        width: 0;
+        order: 2;
+    }
+}

@@ -1,0 +1,107 @@
+@use "sass:map";
+
+.stages {
+    width: 100vw;
+    max-width: 100%;
+    padding: 20px;
+
+    @media (max-width: map.get($breakpoints, laptop)) {
+        padding: 16px;
+    }
+}
+
+.section-stages {
+    @include section-padding(15, 36);
+
+    @media (max-width: map.get($breakpoints, big_desktop)) {
+        @include section-padding(12, 25);
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        @include section-padding(5, 5);
+    }
+}
+
+.stages__heading {
+    padding-bottom: 52px;
+}
+
+.table_scroll {
+    @media (max-width: map.get($breakpoints, small)) {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+
+.stages__table {
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    @media (max-width: map.get($breakpoints, small)) {
+        width: 300%;
+    }
+}
+
+.stages__stage {
+    background-color: black;
+    box-shadow: -2px 0 0 0 $white;
+    border-radius: 3px 0 0 3px;
+    padding: 20px;
+
+    color: $white;
+    font-weight: 300;
+    line-height: 1;
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        padding: 12px;
+    }
+}
+
+.stages__name, .stages__description {
+    padding: 16px;
+    line-height: 1.2;
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        padding: 4px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+.stages__name {
+    width: calc(100% / 5);
+
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        font-size: #{map.get($sizeFont, xs_3)}px;
+        font-weight: 700;
+    }
+
+    @media (max-width: map.get($breakpoints, small)) {
+        min-width: calc(100% / 2);
+        font-size: #{map.get($sizeFont, s_3)}px;
+    }
+
+    @media (max-width: map.get($breakpoints, xs_small)) {
+        min-width: calc(100% / 2);
+        font-size: #{map.get($sizeFont, xs_2)}px;
+    }
+}
+
+.stages__description {
+    vertical-align: top;
+    line-height: 1;
+}
+
+.stages__button {
+    float: right;
+    margin: 0;
+    margin-top: 44px;
+
+    @media (max-width: map.get($breakpoints, normal)) {
+        margin-top: 24px;
+    }
+}
