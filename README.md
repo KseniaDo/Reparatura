@@ -11,20 +11,25 @@ The image format used is Webp (with JPG support for non-supporting screens).
 
 ## Screenshots
 
-Desktop:
+### Desktop:
+
 ![image](https://github.com/user-attachments/assets/eb3b7702-38b4-4136-bd05-7f611c4aa65f)
 
-Tablets:
+### Tablets:
+
 ![image](https://github.com/user-attachments/assets/f4ab00a1-470a-4ac6-beeb-fedfe58d5bcd)
 
-Smartphone:
+### Smartphone:
+
 ![image](https://github.com/user-attachments/assets/470d22d1-322b-4cfa-b442-f06365803562)
 
 
 ## Lighthouse
 
-Desktop:
+### Desktop:
+
 ![image](https://github.com/user-attachments/assets/5ee35494-9acf-4d6a-9092-3a1432abb57c)
 
-Mobile:
+### Mobile:
+
 ![image](https://github.com/user-attachments/assets/394600c4-8fb0-4422-828f-e6cd4538fb18)
