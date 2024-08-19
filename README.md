@@ -1,12 +1,15 @@
 # Landing site about repair work.
 The following technologies were used for the development:
-1. Building a project: Gulp 4
-2. Webpack for JavaScript
-3. SCSS, HTML
+- Building a project: Gulp 4;
+- Webpack for JavaScript;
+- SCSS, HTML.
 
 The name of classes according to the BEM methodology.
+
 Adaptability: The site is designed for screens up to 340px.
+
 Retina-displays: There is support for high pixel density screens (2x, 3x).
+
 The image format used is Webp (with JPG support for non-supporting screens).
 
 ## Screenshots
